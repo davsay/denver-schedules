@@ -50,7 +50,7 @@ function generateMonth(year, month) {
   var monthName = ['January (enero)', 'February (febrero)', 'March (marzo)', 'April (abril)', 'May (mayo)', 'June (junio)', 'July (julio)', 'August (agosto)', 'September (septiembre)', 'October (octubre)', 'November (noviembre)', 'December (diciembre)']
   var emptyDays = new Date(year,month,1).getDay();
   var days = [];
-  var daysInMonth = new Date(year, month, 0).getDate();
+  var daysInMonth = new Date(year, month+1, 0).getDate();
 
 
   for (var i = 1; i<=daysInMonth; i++) {
